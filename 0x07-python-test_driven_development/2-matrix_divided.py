@@ -11,7 +11,8 @@ def matrix_divided(matrix, div):
         div (int/float): The divisor.
     Raises:
         TypeError: If the matrix contains non-numbers.
-      TypeError: If div is not an int or float.
+        TypeError: If the matrix contains rows of different sizes.
+        TypeError: If div is not an int or float.
         ZeroDivisionError: If div is 0.
     Returns:
         A new matrix representing the result of the division.
@@ -33,3 +34,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
+
+
+    new_matrix = [[round(col / div, 2) for col in row] for row in matrix]
+
+    return new_matrix
