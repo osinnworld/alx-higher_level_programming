@@ -23,3 +23,5 @@
 21. 0x10-python-network_0
 22. 0x11-python-network_1
 23. update_readme.py
+24. 0x14-javascript-web_scraping
+25. 0x15-javascript-web_jquery
